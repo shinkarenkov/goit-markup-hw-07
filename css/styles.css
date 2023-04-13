@@ -205,7 +205,7 @@ ul{
     max-width: 165px;
     max-height: 40px;
     padding: 8px 24px;
-    margin-left: 24px;
+    
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     border: none;
@@ -535,8 +535,8 @@ outline: 2px solid var(--button-hover);
     .container {
         margin: 0 auto;
         width: 428px;
-        padding-left: 15px;
-        padding-right: 15px;
+        padding-left: 16px;
+        padding-right: 16px;
         }
         .mobile-menu-icon{
             fill: #2e2f42;
@@ -821,7 +821,7 @@ outline: 2px solid var(--button-hover);
 
         .main-section{
 
-            max-width: 428px;
+            max-width: 100%;
             height: 422px;
             margin-right: auto;
             margin-left: auto;
@@ -1155,17 +1155,16 @@ outline: 2px solid var(--button-hover);
         .auth-nav{
             font-style: normal;
         }
-        .auth-nav.item:not(:last-child){
+        .auth-nav .item:not(:last-child){
             margin-bottom: 12px;
         }
         
         .descript-list{
             
             display: flex;
-                flex-wrap: wrap;
                 row-gap: 72px;
                 column-gap: 24px;
-            
+                justify-content: center;
                 align-content: center;
                 flex-basis: calc((100%-24px*1)/4);
             
@@ -1173,7 +1172,7 @@ outline: 2px solid var(--button-hover);
      /* =====OUR-team====== */
 
          .team-list .item{
-                margin: 0 auto;
+                
                 width: 264px;
                 background: var(--standart-wite);
                 box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
@@ -1181,20 +1180,14 @@ outline: 2px solid var(--button-hover);
             }
             .team-list{
             display: flex;
-            flex-wrap: wrap;
+           
             row-gap: 72px;
             column-gap: 24px;
-            
+            justify-content: center;
             align-content: center;
             flex-basis: calc((100%-24px*1)/4);
         }
-        .customers-list{
         
-                row-gap: 72px;
-                column-gap: 24px;
-
-                flex-basis: calc((100%-24px*1)/6);
-            }
        
             .link-customers {
 
@@ -1226,6 +1219,10 @@ outline: 2px solid var(--button-hover);
         .mobile-menu{
             display: none;
         }
+        .section-title-footer{
+                margin-bottom: 16px;
+                
+            }
 
 }
 @media screen and (max-width:1157px){
@@ -1246,6 +1243,19 @@ outline: 2px solid var(--button-hover);
      margin-bottom: 8px;
 
  }
+
+ .customers-list {
+
+     row-gap: 72px;
+     column-gap: 24px;
+
+     flex-basis: calc((100%-24px*1)/6);
+ }
+.team-list{
+  flex-wrap: wrap;}
+  .descript-list{
+    flex-wrap: wrap;
+  }
 }
 @media screen and (max-width:1157px) and (min-width:768px) {
     .site-nav {
@@ -1259,7 +1269,7 @@ outline: 2px solid var(--button-hover);
     }
 
     .main-section{
-        max-width: 768px;
+        max-width: 100%;
             height: 436px;
             background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/hero-table-1x.jpg");
             padding-top: 112px;
@@ -1289,15 +1299,24 @@ outline: 2px solid var(--button-hover);
         }
 
         .logo-soc-position{
-            
+            align-items: center;
+            justify-content: center;
             gap: 24px;
             margin-bottom: 72px;
          }
     
          .form-footer{
-            
             gap: 24px;
          }
+
+         .form-position{
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: center;
+                align-content: center;
+                flex-wrap: wrap;
+            }
 
 }
 
@@ -1345,7 +1364,7 @@ outline: 2px solid var(--button-hover);
         }
         .main-section{
 
-            max-width: 1440px;
+            max-width: 100%;
             height: 600px;
             margin-right: auto;
             margin-left: auto;
@@ -1445,6 +1464,9 @@ outline: 2px solid var(--button-hover);
             margin-top: 16px;
         }
        
+        .btn-footer {
+            margin-left: 24px;
+        }
         
 }
 
@@ -1475,7 +1497,7 @@ body {
 
  /* ======PORTFOLIO======= */
 
-/* .gallery-section {
+ .gallery-section {
     padding-top: 96px;
     padding-bottom: 120px;
 
@@ -1561,7 +1583,7 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
 
 .input-email::placeholder{
     color: rgba(255, 255, 255, 0.6);;
-} */
+} 
 
 /* ++++++++++MODAL++++++++ */
 
