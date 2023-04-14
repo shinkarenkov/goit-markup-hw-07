@@ -318,9 +318,9 @@ position: absolute;
 top: 24px;
 right: 24px;
 
-    display: flex;
+    /* display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
 
 
     width: 24px;
@@ -721,15 +721,19 @@ outline: 2px solid var(--button-hover);
 
     transition: opacity var(--transform);
     overflow-y: scroll ;
+    display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    
+        padding-top: 80px;
+        padding-left: 40px;
+        padding-bottom: 40px;
     
 }
-.mobile-menu-container{
-   
-   
-    padding-top: 80px;
-    padding-left: 40px;
-    padding-bottom: 40px;
-   
+
+.mobile-top{
+    margin-top: 40px;
+    
 }
 
 .mobile-link{
